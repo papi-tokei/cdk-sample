@@ -1,14 +1,13 @@
-# Welcome to your CDK TypeScript project
+＃＃ メモ
 
-This is a blank project for CDK development with TypeScript.
+```sh
+curl -X GET -H "X-API-Key: <ここにAPIキーを入れる>" '<ここにエンドポイントを入れる>'
+```
 
-The `cdk.json` file tells the CDK Toolkit how to execute your app.
 
-## Useful commands
-
-* `npm run build`   compile typescript to js
-* `npm run watch`   watch for changes and compile
-* `npm run test`    perform the jest unit tests
-* `npx cdk deploy`  deploy this stack to your default AWS account/region
-* `npx cdk diff`    compare deployed stack with current state
-* `npx cdk synth`   emits the synthesized CloudFormation template
+```sh
+curl -X POST '<ここにエンドポイントを入れる>' \
+-H 'Content-Type: application/json' \
+-H 'x-api-key: <ここにAPIキーを入れる>' \
+-d '{"name":"TARO", "age":55}'
+```
